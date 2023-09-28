@@ -7,10 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-
-      # Needed to make godot-tester not fail. It is unclear why this works.
-    - run: touch test_results.xml
-
     - uses: rainbowcow-studio/godot-tester@feature/node-20
       with:
         # required
