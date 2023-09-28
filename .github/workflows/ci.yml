@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        path: './'
+        fetch-depth: 0
     - uses: rainbowcow-studio/godot-tester@feature/node-20
       with:
         # required
