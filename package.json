@@ -21,10 +21,7 @@
     "url": "https://github.com/rainbowcow-studio/farmhand-shuffle/issues"
   },
   "homepage": "https://github.com/rainbowcow-studio/farmhand-shuffle#readme",
-  "dependencies": {
-    "husky": "^8.0.3"
-  },
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.3"
   }
 }
