@@ -10,8 +10,16 @@ A Godot-based card game for farmers.
 
 ## Installation
 
-- Run `npm ci`.
+NOTE: Skip this step if you are using Windows. It will set up pre-commit hooks, but they don't work under Windows. They may work under WSL.
+
+```sh
+npm ci
+```
 
 ## Running tests
 
-Run `npm test`.
+NOTE: This doesn't work under Windows. It may work under WSL. In all environments including Windows, tests can be run from within the GUT panel in the Godot IDE.
+
+```sh
+npm test
+```
