@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "docker run --rm -v .:/app farmhand-shuffle",
+    "test": "docker run --rm -v \"$(pwd):/app\" farmhand-shuffle",
     "build:tests": "docker build -t farmhand-shuffle .",
     "prepare": "husky install && npm run build:tests"
   },

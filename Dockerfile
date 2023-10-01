@@ -1,5 +1,5 @@
 # Use the official Ubuntu base image
-FROM ubuntu:latest
+FROM --platform=linux/amd64 ubuntu:latest
 
 # Set the working directory
 WORKDIR /godot
