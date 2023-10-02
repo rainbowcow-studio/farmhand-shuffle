@@ -1,0 +1,28 @@
+{
+  "name": "farmhand-shuffle",
+  "version": "0.0.0",
+  "description": "A Godot-based card game for farmers",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "docker run --rm -v \"$(pwd):/game\" farmhand-shuffle --headless -d -s --path /game addons/gut/gut_cmdln.gd",
+    "build:tests": "docker build -t farmhand-shuffle .",
+    "prepare": "husky install && npm run build:tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rainbowcow-studio/farmhand-shuffle.git"
+  },
+  "keywords": [],
+  "author": "Rainbow Cow Studio",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rainbowcow-studio/farmhand-shuffle/issues"
+  },
+  "homepage": "https://github.com/rainbowcow-studio/farmhand-shuffle#readme",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
