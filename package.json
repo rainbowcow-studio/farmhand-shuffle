@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "docker run --rm -v \"$(pwd):/app\" farmhand-shuffle",
+    "test": "docker run --rm -v \"$(pwd):/game\" farmhand-shuffle --headless -d -s --path /game addons/gut/gut_cmdln.gd",
     "build:tests": "docker build -t farmhand-shuffle .",
     "prepare": "husky install && npm run build:tests"
   },
